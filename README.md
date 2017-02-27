@@ -1,6 +1,8 @@
 # Frog Problem
 
-This is a quick and dirty MATLAB/Octave script to solve [The Frog Problem](https://www.youtube.com/watch?v=X3HDnrehyDM&t=0s).
+This is a bunch of scripts I wrote to solve [The Frog Problem](https://www.youtube.com/watch?v=X3HDnrehyDM&t=0s).
+
+I wrote a recursive function in MATLAB and a non-recursive class in Java.
 
 ## Approach adopted
 
@@ -34,15 +36,19 @@ and so on...
 
 This improvement lets the program analyze ponds of length 5 to 35 in less than 10 minutes compared to the previous result of 5 to 20 in the same amount of time.
 
+The Java non-recursive version runs much faster and reaches the same results.
+
 ## The files
 
-The file ````checkPond.m```` contains the function ````checkPond```` and the function ````move````, used by ````checkPond````.  
+The file ````MATLAB/checkPond.m```` contains the function ````checkPond```` and the function ````move````, used by ````checkPond````.  
 
-The file ````test.m```` is a simple script which runs ````checkPond```` against ponds of increasing length outputting wether or not they are solvable.
+The file ````MATLAB/test.m```` is a simple script which runs ````checkPond```` against ponds of increasing length outputting wether or not they are solvable.
+
+Similarly the file ````Java/Pond.java```` is a class used by ````Java/frogProblem.java```` which does the same thing ````MATLAB/test.m```` does.
 
 ## Results
 
-I've tested all ponds of the form ````1011...1101```` with length 5-39 (included) and they all are solvable except those with length 13 or between 5 and 11 (included).
+I've tested all ponds of the form ````1011...1101```` with length 5-42 (included) and they all are solvable except those with length 13 or between 5 and 11 (included).
 
 ## License
 
